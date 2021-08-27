@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $user = "root";
 $password = "";
-$database = "usuarios";
+$database = "cadastro";
 $conexao = mysqli_connect($hostname,$user,$password,$database);
 
 ?>
