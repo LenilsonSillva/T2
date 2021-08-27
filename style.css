@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: linear-gradient(to bottom, rgb(135, 0, 0) 17%, rgb(190, 15, 15), rgb(230, 45, 35));
     background-attachment: fixed;
