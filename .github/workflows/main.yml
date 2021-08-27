@@ -13,4 +13,4 @@ jobs:
       with:
         server: lenilson.6te.net
         username: lenilson.6te.net
-        password: sinho123
+        password: ${{ secrets.prod_FTP_PASSWORD }}
