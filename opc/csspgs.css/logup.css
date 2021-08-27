@@ -18,8 +18,8 @@ body {
 }
 fieldset {
     border: 0;
-    width: 50%;
-    background-color: rgb(255, 242, 190);
+    width: 75%;
+    background-color: rgb(0, 0, 0);
     border-radius: 3%;
     justify-content: center;
     align-items: center;
