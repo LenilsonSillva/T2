@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,6 +26,16 @@
         <input type="email" name="email" class="campo" maxlength="50" required >
         <p>Senha</p>
         <input type="password" name="senha" class="campo" maxlength="20" required><br>
+        <?php
+        if(isset($_SESSION['conta_existe'])):
+        ?>
+
+        <p >E-mail já cadastrado, clique <a href="login.php" >aqui</a> para entrar</p>
+
+        <?php
+        unset($_SESSION['conta_existe']);
+        endif;
+        ?>
         <input type="submit" value="Cadastrar" id="btn">
         </form>
     </fieldset>
