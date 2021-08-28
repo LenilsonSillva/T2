@@ -32,11 +32,10 @@ fieldset {
     background-color: rgb(202, 164, 164);
     font-family: cursive;
     font-size: 15px;
-    width: 220px; 
+    width: 215px; 
     position: relative; 
     left: 50%; 
     margin-left: -110px;
-    max-width: 65%;
 }
 input:focus {
     background-color: rgb(255, 255, 255);
