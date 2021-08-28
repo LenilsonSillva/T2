@@ -75,7 +75,7 @@ fieldset p {
 }
 a {
     text-decoration: none;
-    color: rgb(133, 0, 0);
+    color: rgb(65, 26, 26);
 }
 
 @media only screen and (max-width: 1000px){
