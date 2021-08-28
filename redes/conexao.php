@@ -6,4 +6,5 @@ $password = "sinho123";
 $database = "306598";
 $conexao = mysqli_connect($hostname,$user,$password,$database);
 
+
 ?>
