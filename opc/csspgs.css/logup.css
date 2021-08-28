@@ -41,7 +41,7 @@ fieldset {
 input:focus {
     background-color: rgb(202, 164, 164);
 }
-#logup_title {
+#logup_title, #login_title {
     text-align: center;
     font-weight: 250;
     font-size: 3vmax;
@@ -75,17 +75,21 @@ fieldset p {
 }
 
 @media only screen and (max-width: 1000px){
+    #login_title{
+        margin-bottom: 10%;
+    }
     fieldset .campo{
     margin-bottom: 25px;
     margin-top: 5px;
     }
 }
 @media only screen and (min-width: 1001px){
-    fieldset #logup_sub {
+    fieldset #logup_sub, #login_title{
         margin-bottom: 4%;
     }
     fieldset .campo{
         margin-bottom: 15px;
         margin-top: 5px;
-        }
+    }
+
 }

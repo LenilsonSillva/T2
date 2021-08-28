@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,23 +10,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="opc/csspgs.css/logup.css">
-    <title>Ebana | Cadastrar</title>
+    <title>Ebana | Entrar</title>
 </head>
 <body>
     <div id="logo">
         <a href="index.html"> <img src="img/Sem título.png" alt=""></a>
         </div>
     <fieldset>
-        <form action="redes/processa.php" method="POST">
-        <h1 id="logup_title"><strong>FAÇA O SEU CADASTRO</strong></h1>
-        <p id="logup_sub">E APROVEITE VÁRIOS DESCONTOS!</p>
-        <p>Nome</p> 
-        <input type="text" name="nome" class="campo" maxlength="40" required autofocus>
+        <form action="proc-login.php" method="POST">
+        <h1 id="login_title"><strong>ENTRE COM SUA CONTA EBANA</strong></h1>
         <p>E-mail</p>
         <input type="email" name="email" class="campo" maxlength="50" required >
         <p>Senha</p>
         <input type="password" name="senha" class="campo" maxlength="20" required><br>
-        <input type="submit" value="Cadastrar" id="btn">
+        <?php
+        if(isset($_SESSION['nao_autenticado'])):
+        ?>
+        <p>Usuário ou senha inválida</p>
+        <?php
+        unset($_SESSION['nao_autenticado']);
+        endif;
+        ?>
+        <input type="submit" value="Entrar" id="btn">
         </form>
     </fieldset>
 </body>
