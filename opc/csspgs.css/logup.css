@@ -30,13 +30,13 @@ fieldset {
 .campo{
     border-radius: 10%;
     background-color: rgb(202, 164, 164);
-    width: 60%;
-    left: 10%;
-    min-width: 60%;
-    margin-left: 10%;
-    font-size: 15px;
     font-family: cursive;
-    position: relative;
+    font-size: 15px;
+    width: 220px; 
+    position: relative; 
+    left: 50%; 
+    margin-left: -110px;
+    max-width: 65%;
 }
 input:focus {
     background-color: rgb(255, 255, 255);
