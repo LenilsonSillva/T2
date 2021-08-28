@@ -49,8 +49,7 @@ input:focus {
 #logup_sub {
     text-align: center;
     margin-bottom: 10%;
-    font-size: 12px;
-    font-size: 1.2vmax;
+    font-size: 1.5vmax;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #btn {
@@ -67,4 +66,25 @@ input:focus {
     left: 50%; 
     margin-left: -70px;
     max-width: 50%;
+}
+fieldset p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1000px){
+    fieldset .campo{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 1001px){
+    fieldset #logup_sub {
+        margin-bottom: 4%;
+    }
+    fieldset .campo{
+        margin-bottom: 15px;
+        margin-top: 5px;
+        }
 }
