@@ -11,7 +11,7 @@ include('veryf_login.php');
     <title>Bem-vindo | Ebana Burger</title>
 </head>
 <body>
-    <h1>Olá, <?php echo $_SESSION['nome']; ?> </h1>
+    <h1>Olá, <?php echo $_SESSION['email']; ?> </h1>
     <a href="logout.php">sair</a>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-if(!$_SESSION['nome']) {
+if(!$_SESSION['email']) {
     header('Location: login.php');
     exit();
 }

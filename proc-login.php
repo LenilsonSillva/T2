@@ -16,7 +16,7 @@ $result = mysqli_query($conexao,$query);
 $row = mysqli_num_rows($result);
 
 if($row == 1) {
-    $_SESSION['nome'] = $nome;
+    $_SESSION['email'] = $nome;
     header('Location: painel.php');
     exit();
 } else {
