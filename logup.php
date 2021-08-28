@@ -29,9 +29,7 @@ session_start();
         <?php
         if(isset($_SESSION['conta_existe'])):
         ?>
-
         <p >E-mail já cadastrado, clique <a href="login.php" >aqui</a> para entrar</p>
-
         <?php
         unset($_SESSION['conta_existe']);
         endif;

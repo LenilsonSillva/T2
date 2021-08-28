@@ -19,6 +19,15 @@ session_start();
     <fieldset>
         <form action="proc-login.php" method="POST">
         <h1 id="login_title"><strong>ENTRE COM SUA CONTA EBANA</strong></h1>
+        <?php
+        if(isset($_SESSION['cadastro_feito'])):
+        ?>
+        <h2 id="cadsu">Cadastro feito com sucesso!</h2>
+        <h3 id="cadde">Agora é só entrar e aproveitar nossos descontos</h3>
+        <?php
+        unset($_SESSION['cadastro_feito']);
+        endif;
+        ?>
         <p>E-mail</p>
         <input type="email" name="email" class="campo" maxlength="50" required >
         <p>Senha</p>
