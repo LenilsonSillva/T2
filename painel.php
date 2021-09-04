@@ -3,6 +3,7 @@ session_start();
 include('connections/checkLogin.php');
 include('connections/confirm.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
