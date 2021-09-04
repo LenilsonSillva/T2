@@ -75,7 +75,7 @@ fieldset p {
 }
 a {
     text-decoration: none;
-    color: rgb(65, 26, 26);
+    color: rgb(133, 0, 0);
 }
 
 @media only screen and (max-width: 1000px){
@@ -97,6 +97,7 @@ a {
     }
 
 }
+
 h2, h3{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
